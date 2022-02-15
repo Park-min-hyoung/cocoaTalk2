@@ -5,26 +5,27 @@
     <style>
       body {
         height: 1000vh;
-        margin: 20px;
+        margin: 50px;
       }
       div {
         width: 200px;
         height: 200px;
-        color: white;
-        background-color: teal;
-      }
-      #green {
-        position: fixed;
-        top: 5px;
-        opacity: 0.2;
-      }
-      #diffrent {
         background-color: wheat;
+        position: relative;
+      }
+      .green {
+        background-color: teal;
+        height: 75px;
+        width: 75px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
       }
     </style>
   </head>
   <body>
-    <div id="green"></div>
-    <div id="diffrent"></div>
+    <div>
+      <div class="green"></div>
+    </div>
   </body>
 </html>
