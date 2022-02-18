@@ -12,22 +12,27 @@
         padding: 5px;
         border-radius: 10px;
       }
-      p span {
-        color: white;
+      input {
+        border: 1px solid wheat;
       }
-      /* div > span {
-        text-decoration: underline;
-      } */
-      /* p 다음에 span 태그가 있을시(형제 관계) */
-      p + span {
-        text-decoration: underline;
+      input:required {
+        border-color: tomato;
+      }
+      input[type="password"] {
+        background-color: thistle;
+      }
+      input[placeholder~="name"] {
+        background-color: pink;
       }
     </style>
   </head>
   <body>
     <div>
-      <p>alalalllllllllllllllllllllllllllllllla <span>inside</span> aaaa</p>
-      <span>hello</span>
+      <form action="">
+        <input type="text" placeholder="First name" />
+        <input type="text" placeholder="Last name" />
+        <input type="password" required placeholder="password" />
+      </form>
     </div>
   </body>
 </html>
