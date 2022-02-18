@@ -8,23 +8,26 @@
         margin: 50px;
       }
       span {
-        background-color: tomato;
+        background-color: yellowgreen;
+        padding: 5px;
+        border-radius: 10px;
       }
-      span:nth-child(3n + 1) {
-        background-color: teal;
+      p span {
+        color: white;
+      }
+      /* div > span {
+        text-decoration: underline;
+      } */
+      /* p 다음에 span 태그가 있을시(형제 관계) */
+      p + span {
+        text-decoration: underline;
       }
     </style>
   </head>
   <body>
-    <span>hello</span>
-    <span>hello</span>
-    <span>hello</span>
-    <span>hello</span>
-    <span>hello</span>
-    <span>hello</span>
-    <span>hello</span>
-    <span>hello</span>
-    <span>hello</span>
-    <span>hello</span>
+    <div>
+      <p>alalalllllllllllllllllllllllllllllllla <span>inside</span> aaaa</p>
+      <span>hello</span>
+    </div>
   </body>
 </html>
