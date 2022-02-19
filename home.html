@@ -12,26 +12,39 @@
         padding: 5px;
         border-radius: 10px;
       }
-      input {
-        border: 1px solid wheat;
+      input:focus {
+        background-color: teal;
       }
-      input:required {
-        border-color: tomato;
+      a:visited {
+        color: yellowgreen;
       }
-      input[type="password"] {
-        background-color: thistle;
+      a:hover {
+        color: teal;
       }
-      input[placeholder~="name"] {
-        background-color: pink;
+      a:focus {
+        color: turquoise;
+      }
+      form {
+        border: 1px solid salmon;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+      }
+      form:focus-within {
+        border: 3px solid seagreen;
+      }
+      form:hover input:focus {
+        background-color: sienna;
       }
     </style>
   </head>
   <body>
     <div>
+      <a href="https://apple.com">Go to apple</a>
       <form action="">
-        <input type="text" placeholder="First name" />
-        <input type="text" placeholder="Last name" />
-        <input type="password" required placeholder="password" />
+        <input type="text" />
+        <input type="text" />
+        <input type="text" />
       </form>
     </div>
   </body>
