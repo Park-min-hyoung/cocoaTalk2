@@ -3,25 +3,27 @@
   <head>
     <title>Home - My first website.</title>
     <style>
+      :root {
+        --main-color: #fae100;
+        --default-border: 1px solid var(--main-color);
+      }
       body {
         height: 100vh;
         margin: 50px;
       }
-      input::placeholder {
-        color: yellowgreen;
+      p {
+        background-color: var(--main-color);
       }
-      p::selection {
-        background-color: yellowgreen;
-        color: white;
+      a {
+        color: var(--main-color);
+        border: var(--default-border);
       }
     </style>
   </head>
   <body>
+    <p>lerem dfajkdfsdknclkncslkdhfsljdfskaldnflkscnlskdfjlasdkjflsdjfl;</p>
     <div>
-      <form action="">
-        <input type="text" placeholder="Name" />
-      </form>
-      <p>lerem dfajkdfsdknclkncslkdhfsljdfskaldnflkscnlskdfjlasdkjflsdjfl;</p>
+      <a href="#">website</a>
     </div>
   </body>
 </html>
