@@ -125,12 +125,12 @@
 .reply__column:last-child > i,
 .reply__column:last-child button {
   position: absolute;
-  right: -3px;
-  top: 2px;
+  right: -19px;
+  top: 3px;
 }
 
 .reply__column:last-child i {
-  right: 40px;
+  right: 20px;
   top: 17px;
 }
 
